@@ -1,0 +1,16 @@
+# robots.txt — HS Surface Group
+# https://hssurfacegroup.co.uk/
+
+User-agent: *
+Allow: /
+
+# Block any future private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://hssurfacegroup.co.uk/sitemap.xml
