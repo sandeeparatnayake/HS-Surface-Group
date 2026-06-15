@@ -1,0 +1,24 @@
+# robots.txt — HS Surface Group
+# https://hssurfacegroup.co.uk/
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Block any future private or admin paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+
+# Specific crawler settings
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+# Sitemap location — required for Google Search Console
+Sitemap: https://hssurfacegroup.co.uk/sitemap.xml
